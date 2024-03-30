@@ -1,0 +1,1 @@
+Will contain list of every resturant from model its cuisine type, address and price(1-5) and connected with it  will be its menu and a small detail about what its made of and price

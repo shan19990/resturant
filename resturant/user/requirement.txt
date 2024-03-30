@@ -1,0 +1,5 @@
+User will be able to put in First Name, Last Name, and email to register 
+If there is a user present they will be logged in and redirected to the resturant list
+If not then first create the account, login the user and then redirect
+No password is required
+Need to authenticate from Email address

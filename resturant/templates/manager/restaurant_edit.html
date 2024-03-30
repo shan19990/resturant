@@ -1,0 +1,53 @@
+<!-- manager/restaurant_edit.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Restaurant</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Restaurant: {{ form.instance.name }}</h1>
+        <!-- Rest of your form -->
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="name">Name:</label>
+                {{ form.name }}
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                {{ form.location }}
+            </div>
+            <div class="form-group">
+                <label for="price">Price:</label>
+                {{ form.price }}
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                {{ form.description }}
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                {{ form.phone }}
+            </div>
+            <div class="form-group">
+                <label for="photo">Photo:</label>
+                {{ form.photo }}
+            </div>
+            <div class="form-group">
+                <label for="cuisine">Cuisine:</label>
+                {{ form.cuisine }}
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <!-- Bootstrap JS and dependencies (jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Manager will have to login using superuser and will have option to add Resturants, edit menu.
